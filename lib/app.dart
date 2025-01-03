@@ -1,6 +1,8 @@
-import 'package:account_manager/themes/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'layouts/home_layout.dart';
+import 'themes/light_theme.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -11,7 +13,7 @@ class App extends StatelessWidget {
       title: 'Account Manager',
       theme: lightTheme,
       themeMode: ThemeMode.light,
-      home: SizedBox(),
+      home: HomeLayout(),
       debugShowCheckedModeBanner: false,
     );
   }
