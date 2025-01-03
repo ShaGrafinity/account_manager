@@ -1,3 +1,4 @@
+import 'package:account_manager/themes/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -8,8 +9,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Account Manager',
-      debugShowCheckedModeBanner: false,
+      theme: lightTheme,
+      themeMode: ThemeMode.light,
       home: SizedBox(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
